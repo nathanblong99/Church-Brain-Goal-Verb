@@ -38,6 +38,8 @@ import { sms } from '../adapters/sms.js';
 import * as peopleDb from '../adapters/people_db.js';
 import * as churchInfo from '../adapters/church_info_db.js';
 import { renderTemplate } from '../engine/templates.js';
+import { searchPeople } from '../adapters/people.js';
+import { listServices } from '../adapters/calendar.js';
 // Example stub verbs to allow initial tests
 register({
   name: "search_people",
@@ -274,5 +276,99 @@ register({
   async run(args) {
     const { campus, from, to } = args || {};
     return { services: churchInfo.filterServices({ campus, from, to }) };
+  }
+});
+
+// Keyword-based church data search (scoped, deterministic)
+import { tokenize } from '../util/tokenize.js';
+register({
+  name: 'search_church_data',
+  schema: {},
+  async run(args) {
+    const query: string = args.query || '';
+    const limit: number = Math.min(Math.max(args.limit || 6, 1), 15);
+    const tokens = Array.from(new Set(tokenize(query)));
+    if (!tokens.length) return { events: [], meta: { matched: 0, truncated: false, tokens } };
+    const all = churchInfo.listEvents();
+    // Visibility: if sender known + staff, show ministry events; if not known, only "public" (assume title contains public marker or no ministry filter)
+    // For now: simple pass-through; future enhancement: filter by sender ministries.
+    const scored = all.map(e => {
+      const hay = ((e.title||'') + ' ' + (e.description||'')).toLowerCase();
+      let score = 0; for (const t of tokens) if (hay.includes(t)) score++;
+      return { e, score };
+    }).filter(s => s.score > 0);
+    scored.sort((a,b)=> b.score - a.score || ((a.e.start||'').localeCompare(b.e.start||'')) );
+    const top = scored.slice(0, limit);
+    const events = top.map(s => ({ id: s.e.id, title: s.e.title, start: s.e.start, ministry: s.e.ministry, summary: (s.e.description||'').slice(0,160) }));
+    return {
+      events,
+      meta: { matched: scored.length, truncated: scored.length > events.length, tokens }
+    };
+  }
+});
+
+// Unified search verb (people | events | services | facilities). Domain specified via 'domain'.
+register({
+  name: 'search',
+  schema: {},
+  async run(args) {
+    const domain = args.domain;
+    const query = (args.query || '').toLowerCase();
+    const limit = Math.min(Math.max(args.limit || 5, 1), 25);
+    function matchTokens(text: string, toks: string[]) {
+      const lc = text.toLowerCase();
+      return toks.reduce((acc,t)=> acc + (lc.includes(t)?1:0),0);
+    }
+    const tokens = Array.from(new Set(query.split(/[^a-z0-9]+/i).filter(Boolean)));
+    if (!domain) throw new Error('domain required');
+    if (!['people','events','services','facilities'].includes(domain)) throw new Error('unsupported domain');
+    if (!tokens.length) return { items: [], meta: { matched: 0, tokens } };
+    if (domain === 'people') {
+      const all = searchPeople({});
+  const scored = all.map(p => ({ p, score: matchTokens(p.full_name + ' ' + p.ministries.join(' '), tokens as string[]) }))
+        .filter(s => s.score>0)
+        .sort((a,b)=> b.score - a.score);
+      return { items: scored.slice(0,limit).map(s=> ({ id: s.p.id, name: s.p.full_name, roles: s.p.roles, campus: s.p.campus })), meta: { matched: scored.length, tokens } };
+    }
+    if (domain === 'events') {
+      const all = churchInfo.listEvents();
+  const scored = all.map(e => ({ e, score: matchTokens((e.title||'')+' '+(e.description||''), tokens as string[]) }))
+        .filter(s=> s.score>0)
+        .sort((a,b)=> b.score - a.score || (a.e.start||'').localeCompare(b.e.start||''));
+      return { items: scored.slice(0,limit).map(s=> ({ id: s.e.id, title: s.e.title, start: s.e.start, ministry: s.e.ministry })), meta: { matched: scored.length, tokens } };
+    }
+    if (domain === 'services') {
+      const all = listServices({});
+  const scored = all.map(s=> ({ s, score: matchTokens(s.campus + ' ' + (s.start||''), tokens as string[]) }))
+        .filter(s=> s.score>0)
+        .sort((a,b)=> b.score - a.score || (a.s.start||'').localeCompare(b.s.start||''));
+      return { items: scored.slice(0,limit).map(s=> ({ id: s.s.id, campus: s.s.campus, start: s.s.start })), meta: { matched: scored.length, tokens } };
+    }
+    if (domain === 'facilities') {
+      const all = churchInfo.listFacilities();
+  const scored = all.map(f=> ({ f, score: matchTokens(f.name + ' ' + (f.notes||''), tokens as string[]) }))
+        .filter(s=> s.score>0)
+        .sort((a,b)=> b.score - a.score || a.f.name.localeCompare(b.f.name));
+      return { items: scored.slice(0,limit).map(s=> ({ id: s.f.id, name: s.f.name, capacity: s.f.capacity })), meta: { matched: scored.length, tokens } };
+    }
+    return { items: [], meta: { matched: 0, tokens } };
+  }
+});
+
+// calendar.lookup verb: simple service filtering by date (YYYY-MM-DD) or range
+register({
+  name: 'calendar.lookup',
+  schema: {},
+  async run(args) {
+    const { date, campus, limit } = args || {};
+    if (!date) {
+      // return upcoming limited
+      return { services: listServices({ campus, limit: limit||5 }) };
+    }
+    // accept YYYY-MM-DD or ISO
+    let iso = date;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date)) iso = date + 'T00:00:00.000Z';
+    const dayServices = listServices({ campus, from: iso, to: new Date(new Date(iso).getTime()+24*3600*1000).toISOString() });
+    return { services: (limit? dayServices.slice(0,limit): dayServices) };
   }
 });

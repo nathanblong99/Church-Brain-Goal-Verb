@@ -1,5 +1,7 @@
 // Generates natural language outbound messages using the same model, with safety constraints.
+import '../env_bootstrap.ts';
 import { buildGemini } from './gemini_client.js';
+import { startLLM, finishLLM } from './llm_instrumentation.js';
 
 export interface GenerateOpts {
   kind: string;               // semantic type e.g., offer.accepted
@@ -19,8 +21,22 @@ export async function generateReply(opts: GenerateOpts): Promise<string> {
     'Rules: \n- NO JSON.\n- One line.\n- Must retain meaning of event.\n- Include required phrases verbatim.',
     'Reply with ONLY the SMS text.'
   ].filter(Boolean).join('\n\n');
-  const result = await model.generateContent({ contents: [{ role:'user', parts:[{ text: prompt }]}]});
-  let text = result.response.text().trim().replace(/\n+/g,' ');
+  let text: string; let rec: any | undefined; let raw: string | undefined;
+  try {
+    const timeoutMs = Number(process.env.LLM_TIMEOUT_MS || '1200');
+    rec = startLLM('response.generate', prompt);
+    const result = await Promise.race([
+      model.generateContent({ contents: [{ role:'user', parts:[{ text: prompt }]}]}),
+      new Promise((_, reject)=> setTimeout(()=> reject(new Error('LLM_TIMEOUT')), timeoutMs))
+    ]) as any;
+  raw = result.response.text().trim().replace(/\n+/g,' ');
+  text = raw || '';
+    finishLLM(rec, { output: raw, json_parse_ok: false, validation_ok: true });
+  } catch (e) {
+    if (rec) finishLLM(rec, { output: raw, error: e, json_parse_ok: false, validation_ok: false });
+    // fallback simple template
+    text = `${opts.kind.replace(/[_\.]/g,' ')} update.`;
+  }
   // Enforce required phrases if missing (simple fallback append)
   for (const phrase of opts.requiredPhrases || []) {
     if (!text.includes(phrase)) {

@@ -1,67 +1,70 @@
-# TODO Roadmap
+# Roadmap (Current Architecture Migration)
 
-(We will check these off sequentially as implemented.)
+This file supersedes the earlier linear "Phase 1..10" roadmap. Completed historical phases are collapsed; new focus is the migration to a validated, instrumented verb+adapter architecture plus deterministic info retrieval (unified search + calendar lookup) feeding the planner.
 
-## Phase 1: Core Verbs
-- [x] Implement remaining verbs: unassign, broadcast, ask, update_record, fetch_kb, reserve, schedule (and flesh out notify) with simple in-memory behavior & argument validation stubs.
+## Recently Completed (Historical)
+- [x] Core verb stubs & outbound messaging (legacy phases 1–3.5)
+- [x] Executor with templates / foreach / success checks
+- [x] Basic inbound YES/NO routing
+- [x] Planner (Gemini) integration + schema validation + run_goal orchestrator
+- [x] Event log & basic instrumentation (planner + verb timing)
+- [x] Verb argument validation layer (Zod) integrated in executor
+- [x] Fallback interpolation fixes (array preservation for make_offers)
+- [x] Calendar + People adapters (initial in-memory versions)
+- [x] Unified search + calendar.lookup verbs (initial implementation)
 
-## Phase 2: Executor
-- [x] Create executor (`src/engine/executor.ts`) to run a method: load YAML, render templates, run verbs, foreach expansion, capture outputs, evaluate `success_when`.
+## In Flight / Next
+| Status | Task | Notes |
+| ------ | ---- | ----- |
+| [ ] | Add schemas for new verbs (`search`, `calendar.lookup`) | Extend `schemas.ts`; align executor validation |
+| [ ] | Tests for search & calendar lookup | Ensure scoring logic and service-time retrieval path |
+| [ ] | Integrate service-time retrieval into inbound flow | Natural language “what time is church” answered deterministically |
+| [ ] | Planner prompt augmentation | Inject verb summaries + arg keys to reduce hallucinations |
+| [ ] | Verb metrics aggregation | Counts, latency histograms per verb name |
+| [ ] | Documentation sync (`NEW_STRATEGY.md`) | Capture migration rationale & conventions |
+| [ ] | Method linter (updated scope) | Verify only registered verbs + schema-known args |
+| [ ] | Invariants + state machine (rewrite scope) | Re-scope with current request model; add placeholder tests |
+| [ ] | Backfill idempotency & invariants tests | Ensure regression safety |
 
-## Phase 3: Method & Template Infrastructure
-- [x] Method loader + cache (`method_loader.ts`) and simple expression/template rendering (Handlebars for templates + lightweight interpolation for expressions).
-- [x] Template renderer module (`templates.ts`) compiling and caching `.hbs`.
+## Deferred / Legacy Items
+These items from the prior roadmap are deferred until post-migration or will be replaced:
+- Staff command parser (will be superseded by natural language staff intents + classifier slots)
+- KV / clock / KB adapters (stub when a method requires them)
+- Retry logic on malformed planner JSON (low incidence after validation — add if logs show need)
+- Reserve / schedule advanced behaviors (basic stubs exist)
 
-## Phase 3.5: Messaging Channel
-- [x] Implement `sms` adapter (in-memory for dev; idempotency integration).
-- [x] Outbound verbs (`make_offers`, `broadcast`, `ask`, `notify`) use template renderer + sms adapter.
-- [x] Add message persistence (messages table in in-memory db adapter).
-- [x] Implement idempotent key check `msgKey` usage inside each sending verb.
+## Design Principles (Active)
+1. Verbs = deterministic capability surface (validated inputs, typed outputs, instrumented).
+2. Adapters isolate IO (no planner or template side effects).
+3. Planner sees a concise verb catalog (names + arg hints) — fewer hallucinations.
+4. Natural language only for user interaction (no new rigid command tokens).
+5. Deterministic retrieval before LLM generation (search + calendar.lookup) for factual answers.
+6. All outbound human-facing text passes through templates or AI phrasing with compliance guard.
 
-## Phase 3.6: Inbound & Staff Commands
-- [x] `inbound_router.ts` to classify volunteer vs staff replies (basic YES/NO + unhandled).
-- [ ] Staff command parser supporting: STATUS, REB, CANCEL, FILL, SUMMARY, HELP.
-- [ ] Simulation helper `simulateInbound` for tests (currently handled inline via `handleInbound`).
-- [ ] Update scenario tests to use inbound YES instead of direct assignment calls.
+## Immediate Focus for Next Session
+1. Add Zod schemas for `search` & `calendar.lookup` verbs; re-run tests.
+2. Create `NEW_STRATEGY.md` capturing architectural migration + retrieval pattern.
+3. Add targeted tests: people search ranking & service-time answer path.
+4. Hook calendar lookup into inbound router for “what time” style queries.
+5. Enhance planner prompt with generated verb catalog (auto from registry) and measure JSON validity rate post-change.
 
-## Phase 4: Invariants & State Machine
-- [ ] Implement `invariants.ts` skeleton with 4 invariants.
-- [ ] Implement `state_machine.ts` with transitions draft→open→partially_filled/filled.
+## Scratch Notes
+- Type casting fix applied to unified search (tokens as string[]).
+- Need to add validation for search args shape (domains union, q?:string, roles?:string[], campus?:string).
+- Consider splitting unified search scoring util into `search_utils.ts` if logic grows.
 
-## Phase 5: Adapters & Events
-- [ ] Implement adapters (`sms.ts`, `db.ts`, `kv.ts`, `clock.ts`, `kb.ts`) with in-memory implementations. (sms & db done; kv/clock/kb pending)
-- [x] Implement `events.ts` append-only log utilities.
-
-## Phase 6: Gemini Planner Integration
-- [x] Add @google/generative-ai dependency
-- [x] Implement `plan_schema.ts` with Ajv validator
-- [x] Implement `gemini_client.ts` + `planner.ts` using Gemini JSON output
-- [x] Add `planner.spec.ts` (skips if no API key)
-- [x] Add orchestrator `run_goal.ts` linking planner + executor
-- [x] Log planner & execution events
-- [ ] Retry logic on malformed JSON
-- [ ] Safety: max steps cap & method existence pre-check
-
-## Phase 7: Method Linter
-- [ ] Add `method_linter.ts` verifying all `call:` names correspond to registered verbs and report unknown variables (basic pass).
-
-## Phase 8: Tests
-- [ ] Add invariants test.
-- [ ] Add idempotency test.
-- [ ] Add scenario test `accept_nursery_to_children.spec.ts` (skeleton / partial simulation).
-
-## Phase 9: Documentation Sync
-- [ ] Update `README.md` (copy of Agent.md) & mark completed items, adjust examples if needed.
-
-## Phase 10: Polish
-- [ ] Add JSON Schema / zod validation per verb.
-- [ ] Add metrics emission stubs in registry wrapper.
-- [ ] Add fallback handling (not yet implemented in executor).
+## Progress Log (Recent)
+- Added validation layer & integrated into executor.
+- Fixed planner fallback referencing candidates.people.
+- Implemented people & calendar adapters (service listing + lookupByDate).
+- Added unified search & calendar.lookup verbs (compile errors resolved via token casting).
+- Preparing to add schemas + inbound integration for service-time Q&A.
 
 ---
-Progress log will be appended below as tasks are completed.
+Historical log preserved below (legacy format) for provenance.
 
-## Progress Log
+---
+### Legacy Progress Log (Collapsed)
 - Phase 1 complete: Added verb stubs (unassign, broadcast, ask, update_record, fetch_kb, reserve, schedule, enhanced notify) in `src/verbs/index.ts`.
 - Phase 2 complete: Implemented executor with YAML load, interpolation, foreach, success checks.
 - Phase 3.5 complete: Added template renderer, sms adapter, refactored outbound verbs, message persistence.

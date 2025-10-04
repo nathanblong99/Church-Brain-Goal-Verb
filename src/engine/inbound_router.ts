@@ -1,6 +1,7 @@
 import { db } from '../adapters/db.js';
 import { getVerb } from '../verbs/index.js';
 import { generateReply } from '../agent/response_generator.js';
+import { generateExperimentalPlan, executeExperimentalPlan } from '../agent/experimental_planner.js';
 import { classifyInbound } from '../agent/classifier.js';
 import { logEvent } from './events.js';
 import { listEvents } from '../adapters/church_info_db.js';
@@ -17,6 +18,22 @@ function isNo(b: string){ return /^(no|n)$/i.test(b); }
 
 export async function handleInbound(msg: InboundMessage): Promise<InboundResult> {
   const body = normalize(msg.body);
+  // Experimental full AI path (bypasses classifier + intent logic) guarded by env flag
+  if (process.env.FULL_AI_EXPERIMENT === '1') {
+    try {
+      const plan = await generateExperimentalPlan(body, { from: msg.from });
+      if (plan && plan.steps) {
+        const execRes = await executeExperimentalPlan(plan, { now: () => new Date(), emit: () => {}, env: {} });
+        if (execRes.reply) {
+          return { kind: 'experimental.reply', details: { goal: plan.goal_summary, steps: plan.steps.length }, reply: execRes.reply };
+        }
+        return { kind: 'experimental.no_reply', details: { goal: plan.goal_summary, store: execRes.store } };
+      }
+      // fall through to standard flow if plan null
+    } catch (e) {
+      // swallow and continue normal flow
+    }
+  }
   // Multi-turn continuation check: if we have pending add_event, attempt merge before offer logic.
   const pending = getPendingAddEvent(msg.from);
   // naive: find any active offer for pseudo request 'REQ'

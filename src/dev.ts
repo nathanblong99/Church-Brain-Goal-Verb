@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { runGoal } from './engine/run_goal.js';
 
 async function main(){

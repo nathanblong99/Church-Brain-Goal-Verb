@@ -476,3 +476,35 @@ export function getVerb(name:string){ if(!registry[name]) throw new Error(`Unkno
 ---
 
 **Summary:** This blueprint keeps the AI **flexible** (planning + phrasing) and the system **controllable** (verbs, locks, invariants, templates). If your repo matches this doc, you'll be scalable, stable, and sustainable from day one.
+
+---
+
+## Migration Update (Unified Search & Deterministic Info Retrieval)
+
+We are mid‑migration toward a refined architecture emphasizing:
+
+1. Validated verbs (Zod) enforced pre-execution.
+2. Deterministic retrieval before generation (unified `search` + `calendar.lookup`).
+3. Planner prompt augmentation with an auto-generated verb catalog (pending).
+4. Instrumented latency + outcome metrics per verb.
+
+### Newly Added (In Progress)
+- `adapters/people.ts` and `adapters/calendar.ts` — encapsulate domain lists & time lookups.
+- Unified `search` verb — multi-domain (people, events, services, facilities) simple token scoring.
+- `calendar.lookup` verb — resolves natural language date/time queries (initial: service times for a date or next service).
+
+### Immediate Next Steps
+| Task | Purpose |
+| ---- | ------- |
+| Add schemas for `search` & `calendar.lookup` | Keep validation layer complete |
+| Inbound integration for service-time Q&A | Answer “What time is church Sunday?” deterministically |
+| Planner prompt verb catalog injection | Reduce hallucinations; improve JSON validity |
+| Tests: search ranking + calendar answer | Guardrails & regression safety |
+| Verb metrics aggregation | Observability & tuning |
+
+### Design Guardrails (Reaffirmed)
+- No new rigid staff command tokens; rely on NL classification + slot extraction.
+- Retrieval first: if answer derivable from adapters, do not invoke LLM for facts (LLM used only for phrasing / strategy).
+- Verbs remain the only side-effect layer; planner stays pure.
+
+*(This section is ephemeral; fold into the main doc once migration stabilizes.)*
