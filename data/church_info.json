@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "updated_at": "2025-10-03T19:53:24.682Z",
+  "facilities": [
+    {
+      "id": "fac_1",
+      "name": "Main Sanctuary",
+      "capacity": 500,
+      "location": "Building A",
+      "rooms": [
+        "Floor"
+      ],
+      "notes": "Primary worship space"
+    },
+    {
+      "id": "fac_2",
+      "name": "Fellowship Hall",
+      "capacity": 200,
+      "location": "Building B",
+      "rooms": [
+        "Hall"
+      ],
+      "notes": "Meals & large gatherings"
+    },
+    {
+      "id": "fac_3",
+      "name": "Student Center",
+      "capacity": 120,
+      "location": "Building C",
+      "rooms": [
+        "Auditorium",
+        "Game Room"
+      ],
+      "notes": "Youth ministry hub"
+    },
+    {
+      "id": "fac_4",
+      "name": "Children Wing",
+      "capacity": 150,
+      "location": "Building D",
+      "rooms": [
+        "Nursery",
+        "PreK",
+        "Elementary"
+      ],
+      "notes": "Secure check-in required"
+    },
+    {
+      "id": "fac_5",
+      "name": "Gym",
+      "capacity": 250,
+      "location": "Family Life Center",
+      "rooms": [
+        "Court"
+      ],
+      "notes": "Multipurpose sports/outreach"
+    },
+    {
+      "id": "fac_6",
+      "name": "Prayer Chapel",
+      "capacity": 40,
+      "location": "Building A",
+      "rooms": [
+        "Chapel"
+      ],
+      "notes": "Quiet space"
+    },
+    {
+      "id": "fac_7",
+      "name": "Cafe",
+      "capacity": 60,
+      "location": "Lobby",
+      "rooms": [
+        "Service Counter"
+      ],
+      "notes": "Open Sundays & events"
+    }
+  ],
+  "events": [
+    {
+      "id": "evt_1",
+      "title": "Staff Vision Retreat (Updated)",
+      "description": "Weather",
+      "start": "2025-10-09T19:50:12.937Z",
+      "end": "2025-10-09T22:02:12.937Z",
+      "facility_id": "fac_2",
+      "ministry": "prayer",
+      "status": "cancelled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.937Z"
+    },
+    {
+      "id": "evt_2",
+      "title": "Marriage Workshop",
+      "description": "Marriage Workshop for tech ministry",
+      "start": "2025-10-12T19:50:12.938Z",
+      "end": "2025-10-12T21:33:12.938Z",
+      "facility_id": "fac_3",
+      "ministry": "children",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_3",
+      "title": "Leadership Training",
+      "description": "Leadership Training for worship ministry",
+      "start": "2025-10-15T19:50:12.938Z",
+      "end": "2025-10-15T21:21:12.938Z",
+      "facility_id": "fac_4",
+      "ministry": "prayer",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_4",
+      "title": "Baptism Class",
+      "description": "Baptism Class for outreach ministry",
+      "start": "2025-10-18T19:50:12.938Z",
+      "end": "2025-10-18T22:39:12.938Z",
+      "facility_id": "fac_3",
+      "ministry": "hospitality",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_5",
+      "title": "Youth Worship Night",
+      "description": "Youth Worship Night for hospitality ministry",
+      "start": "2025-10-21T19:50:12.938Z",
+      "end": "2025-10-21T22:17:12.938Z",
+      "facility_id": "fac_2",
+      "ministry": "outreach",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_6",
+      "title": "Staff Vision Retreat",
+      "description": "Staff Vision Retreat for students ministry",
+      "start": "2025-10-24T19:50:12.938Z",
+      "end": "2025-10-24T21:35:12.938Z",
+      "facility_id": "fac_7",
+      "ministry": "prayer",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_7",
+      "title": "Baptism Class",
+      "description": "Baptism Class for worship ministry",
+      "start": "2025-10-27T19:50:12.938Z",
+      "end": "2025-10-27T21:26:12.938Z",
+      "facility_id": "fac_2",
+      "ministry": "hospitality",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_8",
+      "title": "Tech Team Workshop",
+      "description": "Tech Team Workshop for children ministry",
+      "start": "2025-10-30T19:50:12.938Z",
+      "end": "2025-10-30T21:00:12.938Z",
+      "facility_id": "fac_2",
+      "ministry": "prayer",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_9",
+      "title": "Baptism Class",
+      "description": "Baptism Class for worship ministry",
+      "start": "2025-11-02T19:50:12.938Z",
+      "end": "2025-11-02T22:29:12.938Z",
+      "facility_id": "fac_3",
+      "ministry": "prayer",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    },
+    {
+      "id": "evt_10",
+      "title": "Tech Team Workshop",
+      "description": "Tech Team Workshop for hospitality ministry",
+      "start": "2025-11-05T19:50:12.938Z",
+      "end": "2025-11-05T21:14:12.938Z",
+      "facility_id": "fac_2",
+      "ministry": "hospitality",
+      "status": "scheduled",
+      "created_by": "+1555100112",
+      "created_at": "2025-10-03T19:50:12.938Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "svc_1",
+      "campus": "west",
+      "start": "2025-10-05T20:00:00.000Z",
+      "end": "2025-10-05T21:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_2",
+      "campus": "online",
+      "start": "2025-10-12T20:00:00.000Z",
+      "end": "2025-10-12T21:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_3",
+      "campus": "east",
+      "start": "2025-10-19T20:00:00.000Z",
+      "end": "2025-10-19T21:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_4",
+      "campus": "east",
+      "start": "2025-10-26T20:00:00.000Z",
+      "end": "2025-10-26T21:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_5",
+      "campus": "north",
+      "start": "2025-11-02T21:00:00.000Z",
+      "end": "2025-11-02T22:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_6",
+      "campus": "east",
+      "start": "2025-11-09T21:00:00.000Z",
+      "end": "2025-11-09T22:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_7",
+      "campus": "online",
+      "start": "2025-11-16T21:00:00.000Z",
+      "end": "2025-11-16T22:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    },
+    {
+      "id": "svc_8",
+      "campus": "west",
+      "start": "2025-11-23T21:00:00.000Z",
+      "end": "2025-11-23T22:30:00.000Z",
+      "ministries_needed": {
+        "nursery": 4,
+        "children": 8,
+        "worship": 6,
+        "tech": 3
+      }
+    }
+  ],
+  "announcements": []
+}

@@ -1,0 +1,24 @@
+method: rebalance_roles
+applicable_if: goal.kind == "RebalanceTargets"
+steps:
+  - call: update_record
+    args:
+      entity_id: "{{goal.request_id}}"
+      patch:
+        targets: "{{goal.targets}}"
+  - call: search_people
+    args:
+      filter:
+        roles: ["nursery"]
+        is_active: true
+    out: nursery_pool
+  # Placeholder logic: in a real version we would calculate overfill and unassign
+  - call: notify
+    args:
+      targets: ["staff_ops"]
+      template: filled_n_of_m
+      vars:
+        n: "0"
+        m: "0"
+success_when:
+  - "true"

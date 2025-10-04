@@ -1,0 +1,16 @@
+method: cancel_request
+applicable_if: goal.kind == "CancelRequest"
+steps:
+  - call: notify
+    args:
+      targets: "{{goal.notify_targets || []}}"
+      template: cancellation
+      vars:
+        request_id: "{{goal.request_id}}"
+  - call: update_record
+    args:
+      entity_id: "{{goal.request_id}}"
+      patch:
+        status: cancelled
+success_when:
+  - "true"

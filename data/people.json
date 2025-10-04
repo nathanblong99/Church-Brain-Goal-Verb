@@ -1,0 +1,1885 @@
+[
+  {
+    "id": "M1",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Jackson",
+    "full_name": "Morgan Jackson",
+    "phone": "+1555100000",
+    "age": 29,
+    "campus": "west",
+    "ministries": [
+      "worship",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M2",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Rodriguez",
+    "full_name": "Parker Rodriguez",
+    "phone": "+1555100001",
+    "age": 60,
+    "campus": "west",
+    "ministries": [
+      "outreach",
+      "nursery",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M3",
+    "kind": "member",
+    "first_name": "Taylor",
+    "last_name": "Martin",
+    "full_name": "Taylor Martin",
+    "phone": "+1555100002",
+    "age": 61,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "prayer",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M4",
+    "kind": "member",
+    "first_name": "Jordan",
+    "last_name": "Moore",
+    "full_name": "Jordan Moore",
+    "phone": "+1555100003",
+    "age": 36,
+    "campus": "east",
+    "ministries": [
+      "outreach",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M5",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Thomas",
+    "full_name": "Reagan Thomas",
+    "phone": "+1555100004",
+    "age": 59,
+    "campus": "north",
+    "ministries": [
+      "nursery",
+      "worship",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M6",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Thompson",
+    "full_name": "Morgan Thompson",
+    "phone": "+1555100005",
+    "age": 19,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "outreach",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M7",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Miller",
+    "full_name": "Logan Miller",
+    "phone": "+1555100006",
+    "age": 36,
+    "campus": "east",
+    "ministries": [
+      "prayer",
+      "students",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M8",
+    "kind": "member",
+    "first_name": "Jordan",
+    "last_name": "Rodriguez",
+    "full_name": "Jordan Rodriguez",
+    "phone": "+1555100007",
+    "age": 56,
+    "campus": "west",
+    "ministries": [
+      "outreach",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": false
+  },
+  {
+    "id": "M9",
+    "kind": "member",
+    "first_name": "Jamie",
+    "last_name": "Rodriguez",
+    "full_name": "Jamie Rodriguez",
+    "phone": "+1555100008",
+    "age": 67,
+    "campus": "online",
+    "ministries": [
+      "worship",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M10",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Smith",
+    "full_name": "Finley Smith",
+    "phone": "+1555100009",
+    "age": 65,
+    "campus": "north",
+    "ministries": [
+      "students",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": false
+  },
+  {
+    "id": "M11",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Jackson",
+    "full_name": "Finley Jackson",
+    "phone": "+1555100010",
+    "age": 44,
+    "campus": "online",
+    "ministries": [
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M12",
+    "kind": "member",
+    "first_name": "Kendall",
+    "last_name": "Davis",
+    "full_name": "Kendall Davis",
+    "phone": "+1555100011",
+    "age": 36,
+    "campus": "south",
+    "ministries": [
+      "hospitality",
+      "prayer",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M13",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Anderson",
+    "full_name": "Parker Anderson",
+    "phone": "+1555100012",
+    "age": 52,
+    "campus": "online",
+    "ministries": [
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M14",
+    "kind": "member",
+    "first_name": "Taylor",
+    "last_name": "Martinez",
+    "full_name": "Taylor Martinez",
+    "phone": "+1555100013",
+    "age": 40,
+    "campus": "north",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": false
+  },
+  {
+    "id": "M15",
+    "kind": "member",
+    "first_name": "Jamie",
+    "last_name": "Brown",
+    "full_name": "Jamie Brown",
+    "phone": "+1555100014",
+    "age": 17,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M16",
+    "kind": "member",
+    "first_name": "Hayden",
+    "last_name": "White",
+    "full_name": "Hayden White",
+    "phone": "+1555100015",
+    "age": 46,
+    "campus": "south",
+    "ministries": [
+      "outreach",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M17",
+    "kind": "member",
+    "first_name": "Taylor",
+    "last_name": "Davis",
+    "full_name": "Taylor Davis",
+    "phone": "+1555100016",
+    "age": 67,
+    "campus": "online",
+    "ministries": [
+      "outreach",
+      "worship",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M18",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Williams",
+    "full_name": "Riley Williams",
+    "phone": "+1555100017",
+    "age": 30,
+    "campus": "online",
+    "ministries": [
+      "hospitality",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M19",
+    "kind": "member",
+    "first_name": "Quinn",
+    "last_name": "White",
+    "full_name": "Quinn White",
+    "phone": "+1555100018",
+    "age": 44,
+    "campus": "south",
+    "ministries": [
+      "children",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M20",
+    "kind": "member",
+    "first_name": "Kendall",
+    "last_name": "White",
+    "full_name": "Kendall White",
+    "phone": "+1555100019",
+    "age": 34,
+    "campus": "east",
+    "ministries": [
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M21",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Davis",
+    "full_name": "Alex Davis",
+    "phone": "+1555100020",
+    "age": 59,
+    "campus": "west",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M22",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Jackson",
+    "full_name": "Parker Jackson",
+    "phone": "+1555100021",
+    "age": 40,
+    "campus": "west",
+    "ministries": [
+      "prayer",
+      "nursery",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M23",
+    "kind": "member",
+    "first_name": "Jamie",
+    "last_name": "Rodriguez",
+    "full_name": "Jamie Rodriguez",
+    "phone": "+1555100022",
+    "age": 21,
+    "campus": "south",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M24",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Hernandez",
+    "full_name": "Logan Hernandez",
+    "phone": "+1555100023",
+    "age": 39,
+    "campus": "east",
+    "ministries": [
+      "children",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M25",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Anderson",
+    "full_name": "Alex Anderson",
+    "phone": "+1555100024",
+    "age": 22,
+    "campus": "south",
+    "ministries": [
+      "worship",
+      "prayer",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M26",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Rodriguez",
+    "full_name": "Morgan Rodriguez",
+    "phone": "+1555100025",
+    "age": 61,
+    "campus": "west",
+    "ministries": [
+      "outreach",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M27",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Hernandez",
+    "full_name": "Logan Hernandez",
+    "phone": "+1555100026",
+    "age": 29,
+    "campus": "east",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M28",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Jackson",
+    "full_name": "Morgan Jackson",
+    "phone": "+1555100027",
+    "age": 42,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M29",
+    "kind": "member",
+    "first_name": "Hayden",
+    "last_name": "Jones",
+    "full_name": "Hayden Jones",
+    "phone": "+1555100028",
+    "age": 54,
+    "campus": "north",
+    "ministries": [
+      "prayer",
+      "children",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M30",
+    "kind": "member",
+    "first_name": "Blake",
+    "last_name": "Hernandez",
+    "full_name": "Blake Hernandez",
+    "phone": "+1555100029",
+    "age": 65,
+    "campus": "online",
+    "ministries": [
+      "hospitality",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M31",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Thompson",
+    "full_name": "Riley Thompson",
+    "phone": "+1555100030",
+    "age": 40,
+    "campus": "west",
+    "ministries": [
+      "students",
+      "nursery",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M32",
+    "kind": "member",
+    "first_name": "Kendall",
+    "last_name": "Wilson",
+    "full_name": "Kendall Wilson",
+    "phone": "+1555100031",
+    "age": 27,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M33",
+    "kind": "member",
+    "first_name": "Rowan",
+    "last_name": "Martinez",
+    "full_name": "Rowan Martinez",
+    "phone": "+1555100032",
+    "age": 20,
+    "campus": "south",
+    "ministries": [
+      "children",
+      "students",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M34",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Brown",
+    "full_name": "Parker Brown",
+    "phone": "+1555100033",
+    "age": 35,
+    "campus": "west",
+    "ministries": [
+      "students",
+      "prayer",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M35",
+    "kind": "member",
+    "first_name": "Reese",
+    "last_name": "White",
+    "full_name": "Reese White",
+    "phone": "+1555100034",
+    "age": 20,
+    "campus": "west",
+    "ministries": [
+      "students",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M36",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Wilson",
+    "full_name": "Alex Wilson",
+    "phone": "+1555100035",
+    "age": 51,
+    "campus": "south",
+    "ministries": [
+      "prayer",
+      "worship",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M37",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Anderson",
+    "full_name": "Reagan Anderson",
+    "phone": "+1555100036",
+    "age": 30,
+    "campus": "west",
+    "ministries": [
+      "students",
+      "hospitality",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M38",
+    "kind": "member",
+    "first_name": "Harper",
+    "last_name": "Thomas",
+    "full_name": "Harper Thomas",
+    "phone": "+1555100037",
+    "age": 42,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "nursery",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M39",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Thomas",
+    "full_name": "Reagan Thomas",
+    "phone": "+1555100038",
+    "age": 27,
+    "campus": "online",
+    "ministries": [
+      "tech",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M40",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Martin",
+    "full_name": "Parker Martin",
+    "phone": "+1555100039",
+    "age": 36,
+    "campus": "north",
+    "ministries": [
+      "students",
+      "hospitality",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M41",
+    "kind": "member",
+    "first_name": "Harper",
+    "last_name": "Rodriguez",
+    "full_name": "Harper Rodriguez",
+    "phone": "+1555100040",
+    "age": 26,
+    "campus": "online",
+    "ministries": [
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M42",
+    "kind": "member",
+    "first_name": "Avery",
+    "last_name": "White",
+    "full_name": "Avery White",
+    "phone": "+1555100041",
+    "age": 41,
+    "campus": "east",
+    "ministries": [
+      "outreach",
+      "tech",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M43",
+    "kind": "member",
+    "first_name": "Reese",
+    "last_name": "Martinez",
+    "full_name": "Reese Martinez",
+    "phone": "+1555100042",
+    "age": 63,
+    "campus": "south",
+    "ministries": [
+      "outreach",
+      "worship",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M44",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Johnson",
+    "full_name": "Reagan Johnson",
+    "phone": "+1555100043",
+    "age": 28,
+    "campus": "south",
+    "ministries": [
+      "nursery",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M45",
+    "kind": "member",
+    "first_name": "Blake",
+    "last_name": "Jones",
+    "full_name": "Blake Jones",
+    "phone": "+1555100044",
+    "age": 44,
+    "campus": "west",
+    "ministries": [
+      "hospitality",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M46",
+    "kind": "member",
+    "first_name": "Reese",
+    "last_name": "Thompson",
+    "full_name": "Reese Thompson",
+    "phone": "+1555100045",
+    "age": 54,
+    "campus": "east",
+    "ministries": [
+      "tech",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M47",
+    "kind": "member",
+    "first_name": "Emerson",
+    "last_name": "Miller",
+    "full_name": "Emerson Miller",
+    "phone": "+1555100046",
+    "age": 47,
+    "campus": "online",
+    "ministries": [
+      "worship",
+      "students",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M48",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Williams",
+    "full_name": "Finley Williams",
+    "phone": "+1555100047",
+    "age": 30,
+    "campus": "south",
+    "ministries": [
+      "outreach",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M49",
+    "kind": "member",
+    "first_name": "Avery",
+    "last_name": "Johnson",
+    "full_name": "Avery Johnson",
+    "phone": "+1555100048",
+    "age": 26,
+    "campus": "south",
+    "ministries": [
+      "tech",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M50",
+    "kind": "member",
+    "first_name": "Taylor",
+    "last_name": "Jackson",
+    "full_name": "Taylor Jackson",
+    "phone": "+1555100049",
+    "age": 18,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "children",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M51",
+    "kind": "member",
+    "first_name": "Quinn",
+    "last_name": "Thomas",
+    "full_name": "Quinn Thomas",
+    "phone": "+1555100050",
+    "age": 22,
+    "campus": "north",
+    "ministries": [
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M52",
+    "kind": "member",
+    "first_name": "Rowan",
+    "last_name": "Jones",
+    "full_name": "Rowan Jones",
+    "phone": "+1555100051",
+    "age": 43,
+    "campus": "online",
+    "ministries": [
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M53",
+    "kind": "member",
+    "first_name": "Harper",
+    "last_name": "White",
+    "full_name": "Harper White",
+    "phone": "+1555100052",
+    "age": 57,
+    "campus": "north",
+    "ministries": [
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M54",
+    "kind": "member",
+    "first_name": "Jamie",
+    "last_name": "Martin",
+    "full_name": "Jamie Martin",
+    "phone": "+1555100053",
+    "age": 45,
+    "campus": "east",
+    "ministries": [
+      "nursery",
+      "students",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M55",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Thomas",
+    "full_name": "Logan Thomas",
+    "phone": "+1555100054",
+    "age": 32,
+    "campus": "west",
+    "ministries": [
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M56",
+    "kind": "member",
+    "first_name": "Rowan",
+    "last_name": "Davis",
+    "full_name": "Rowan Davis",
+    "phone": "+1555100055",
+    "age": 34,
+    "campus": "north",
+    "ministries": [
+      "children",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M57",
+    "kind": "member",
+    "first_name": "Hayden",
+    "last_name": "Martinez",
+    "full_name": "Hayden Martinez",
+    "phone": "+1555100056",
+    "age": 65,
+    "campus": "south",
+    "ministries": [
+      "nursery",
+      "children",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M58",
+    "kind": "member",
+    "first_name": "Blake",
+    "last_name": "Taylor",
+    "full_name": "Blake Taylor",
+    "phone": "+1555100057",
+    "age": 67,
+    "campus": "west",
+    "ministries": [
+      "hospitality",
+      "worship",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M59",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Taylor",
+    "full_name": "Riley Taylor",
+    "phone": "+1555100058",
+    "age": 64,
+    "campus": "north",
+    "ministries": [
+      "prayer",
+      "worship",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M60",
+    "kind": "member",
+    "first_name": "Hayden",
+    "last_name": "Jackson",
+    "full_name": "Hayden Jackson",
+    "phone": "+1555100059",
+    "age": 47,
+    "campus": "east",
+    "ministries": [
+      "students",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M61",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Martin",
+    "full_name": "Riley Martin",
+    "phone": "+1555100060",
+    "age": 65,
+    "campus": "west",
+    "ministries": [
+      "hospitality",
+      "prayer",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M62",
+    "kind": "member",
+    "first_name": "Jordan",
+    "last_name": "Miller",
+    "full_name": "Jordan Miller",
+    "phone": "+1555100061",
+    "age": 58,
+    "campus": "west",
+    "ministries": [
+      "hospitality",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M63",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Davis",
+    "full_name": "Morgan Davis",
+    "phone": "+1555100062",
+    "age": 70,
+    "campus": "south",
+    "ministries": [
+      "prayer",
+      "hospitality",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M64",
+    "kind": "member",
+    "first_name": "Reese",
+    "last_name": "Martin",
+    "full_name": "Reese Martin",
+    "phone": "+1555100063",
+    "age": 63,
+    "campus": "south",
+    "ministries": [
+      "children",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M65",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Thompson",
+    "full_name": "Parker Thompson",
+    "phone": "+1555100064",
+    "age": 44,
+    "campus": "east",
+    "ministries": [
+      "prayer",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M66",
+    "kind": "member",
+    "first_name": "Taylor",
+    "last_name": "Wilson",
+    "full_name": "Taylor Wilson",
+    "phone": "+1555100065",
+    "age": 70,
+    "campus": "south",
+    "ministries": [
+      "tech",
+      "hospitality",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M67",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Thomas",
+    "full_name": "Finley Thomas",
+    "phone": "+1555100066",
+    "age": 19,
+    "campus": "north",
+    "ministries": [
+      "students",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M68",
+    "kind": "member",
+    "first_name": "Rowan",
+    "last_name": "Taylor",
+    "full_name": "Rowan Taylor",
+    "phone": "+1555100067",
+    "age": 69,
+    "campus": "west",
+    "ministries": [
+      "nursery",
+      "children",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M69",
+    "kind": "member",
+    "first_name": "Quinn",
+    "last_name": "Thompson",
+    "full_name": "Quinn Thompson",
+    "phone": "+1555100068",
+    "age": 52,
+    "campus": "north",
+    "ministries": [
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M70",
+    "kind": "member",
+    "first_name": "Emerson",
+    "last_name": "Anderson",
+    "full_name": "Emerson Anderson",
+    "phone": "+1555100069",
+    "age": 50,
+    "campus": "north",
+    "ministries": [
+      "tech",
+      "children",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M71",
+    "kind": "member",
+    "first_name": "Quinn",
+    "last_name": "Jackson",
+    "full_name": "Quinn Jackson",
+    "phone": "+1555100070",
+    "age": 43,
+    "campus": "west",
+    "ministries": [
+      "children",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M72",
+    "kind": "member",
+    "first_name": "Jamie",
+    "last_name": "Martin",
+    "full_name": "Jamie Martin",
+    "phone": "+1555100071",
+    "age": 43,
+    "campus": "east",
+    "ministries": [
+      "outreach",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M73",
+    "kind": "member",
+    "first_name": "Casey",
+    "last_name": "Johnson",
+    "full_name": "Casey Johnson",
+    "phone": "+1555100072",
+    "age": 43,
+    "campus": "east",
+    "ministries": [
+      "worship",
+      "prayer",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M74",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Brown",
+    "full_name": "Finley Brown",
+    "phone": "+1555100073",
+    "age": 51,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "outreach",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M75",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Thomas",
+    "full_name": "Alex Thomas",
+    "phone": "+1555100074",
+    "age": 34,
+    "campus": "north",
+    "ministries": [
+      "nursery",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M76",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Taylor",
+    "full_name": "Alex Taylor",
+    "phone": "+1555100075",
+    "age": 46,
+    "campus": "west",
+    "ministries": [
+      "nursery",
+      "worship",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M77",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Thomas",
+    "full_name": "Logan Thomas",
+    "phone": "+1555100076",
+    "age": 44,
+    "campus": "south",
+    "ministries": [
+      "tech",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M78",
+    "kind": "member",
+    "first_name": "Alex",
+    "last_name": "Taylor",
+    "full_name": "Alex Taylor",
+    "phone": "+1555100077",
+    "age": 32,
+    "campus": "west",
+    "ministries": [
+      "tech",
+      "nursery",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M79",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Thompson",
+    "full_name": "Riley Thompson",
+    "phone": "+1555100078",
+    "age": 63,
+    "campus": "west",
+    "ministries": [
+      "prayer",
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M80",
+    "kind": "member",
+    "first_name": "Avery",
+    "last_name": "Garcia",
+    "full_name": "Avery Garcia",
+    "phone": "+1555100079",
+    "age": 16,
+    "campus": "west",
+    "ministries": [
+      "tech",
+      "prayer",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M81",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Wilson",
+    "full_name": "Logan Wilson",
+    "phone": "+1555100080",
+    "age": 45,
+    "campus": "south",
+    "ministries": [
+      "nursery",
+      "prayer",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M82",
+    "kind": "member",
+    "first_name": "Casey",
+    "last_name": "Wilson",
+    "full_name": "Casey Wilson",
+    "phone": "+1555100081",
+    "age": 63,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "tech",
+      "outreach"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M83",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Miller",
+    "full_name": "Reagan Miller",
+    "phone": "+1555100082",
+    "age": 32,
+    "campus": "west",
+    "ministries": [
+      "outreach",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M84",
+    "kind": "member",
+    "first_name": "Finley",
+    "last_name": "Smith",
+    "full_name": "Finley Smith",
+    "phone": "+1555100083",
+    "age": 17,
+    "campus": "east",
+    "ministries": [
+      "hospitality"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M85",
+    "kind": "member",
+    "first_name": "Blake",
+    "last_name": "Jackson",
+    "full_name": "Blake Jackson",
+    "phone": "+1555100084",
+    "age": 67,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M86",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Brown",
+    "full_name": "Logan Brown",
+    "phone": "+1555100085",
+    "age": 34,
+    "campus": "south",
+    "ministries": [
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M87",
+    "kind": "member",
+    "first_name": "Parker",
+    "last_name": "Wilson",
+    "full_name": "Parker Wilson",
+    "phone": "+1555100086",
+    "age": 42,
+    "campus": "online",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M88",
+    "kind": "member",
+    "first_name": "Logan",
+    "last_name": "Brown",
+    "full_name": "Logan Brown",
+    "phone": "+1555100087",
+    "age": 29,
+    "campus": "west",
+    "ministries": [
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M89",
+    "kind": "member",
+    "first_name": "Quinn",
+    "last_name": "Jones",
+    "full_name": "Quinn Jones",
+    "phone": "+1555100088",
+    "age": 62,
+    "campus": "north",
+    "ministries": [
+      "children",
+      "tech"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M90",
+    "kind": "member",
+    "first_name": "Casey",
+    "last_name": "Taylor",
+    "full_name": "Casey Taylor",
+    "phone": "+1555100089",
+    "age": 58,
+    "campus": "north",
+    "ministries": [
+      "worship",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M91",
+    "kind": "member",
+    "first_name": "Harper",
+    "last_name": "Williams",
+    "full_name": "Harper Williams",
+    "phone": "+1555100090",
+    "age": 46,
+    "campus": "west",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M92",
+    "kind": "member",
+    "first_name": "Reagan",
+    "last_name": "Martinez",
+    "full_name": "Reagan Martinez",
+    "phone": "+1555100091",
+    "age": 18,
+    "campus": "north",
+    "ministries": [
+      "hospitality",
+      "prayer",
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M93",
+    "kind": "member",
+    "first_name": "Reese",
+    "last_name": "Jackson",
+    "full_name": "Reese Jackson",
+    "phone": "+1555100092",
+    "age": 37,
+    "campus": "east",
+    "ministries": [
+      "hospitality",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M94",
+    "kind": "member",
+    "first_name": "Riley",
+    "last_name": "Martin",
+    "full_name": "Riley Martin",
+    "phone": "+1555100093",
+    "age": 34,
+    "campus": "online",
+    "ministries": [
+      "nursery",
+      "children",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M95",
+    "kind": "member",
+    "first_name": "Morgan",
+    "last_name": "Hernandez",
+    "full_name": "Morgan Hernandez",
+    "phone": "+1555100094",
+    "age": 50,
+    "campus": "online",
+    "ministries": [
+      "outreach",
+      "students",
+      "prayer"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M96",
+    "kind": "member",
+    "first_name": "Hayden",
+    "last_name": "Rodriguez",
+    "full_name": "Hayden Rodriguez",
+    "phone": "+1555100095",
+    "age": 44,
+    "campus": "south",
+    "ministries": [
+      "prayer",
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M97",
+    "kind": "member",
+    "first_name": "Kendall",
+    "last_name": "Garcia",
+    "full_name": "Kendall Garcia",
+    "phone": "+1555100096",
+    "age": 60,
+    "campus": "south",
+    "ministries": [
+      "worship"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M98",
+    "kind": "member",
+    "first_name": "Kendall",
+    "last_name": "Wilson",
+    "full_name": "Kendall Wilson",
+    "phone": "+1555100097",
+    "age": 67,
+    "campus": "south",
+    "ministries": [
+      "hospitality",
+      "students"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M99",
+    "kind": "member",
+    "first_name": "Jordan",
+    "last_name": "Moore",
+    "full_name": "Jordan Moore",
+    "phone": "+1555100098",
+    "age": 48,
+    "campus": "north",
+    "ministries": [
+      "children"
+    ],
+    "roles": [],
+    "is_active": true
+  },
+  {
+    "id": "M100",
+    "kind": "member",
+    "first_name": "Casey",
+    "last_name": "Rodriguez",
+    "full_name": "Casey Rodriguez",
+    "phone": "+1555100099",
+    "age": 54,
+    "campus": "west",
+    "ministries": [
+      "outreach",
+      "hospitality",
+      "nursery"
+    ],
+    "roles": [],
+    "is_active": false
+  },
+  {
+    "id": "S1",
+    "kind": "staff",
+    "first_name": "Logan",
+    "last_name": "Thomas",
+    "full_name": "Logan Thomas",
+    "phone": "+1555100100",
+    "age": 29,
+    "campus": "south",
+    "ministries": [
+      "worship",
+      "children"
+    ],
+    "roles": [
+      "pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S2",
+    "kind": "staff",
+    "first_name": "Blake",
+    "last_name": "Jackson",
+    "full_name": "Blake Jackson",
+    "phone": "+1555100101",
+    "age": 31,
+    "campus": "north",
+    "ministries": [
+      "prayer"
+    ],
+    "roles": [
+      "associate_pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S3",
+    "kind": "staff",
+    "first_name": "Quinn",
+    "last_name": "Thomas",
+    "full_name": "Quinn Thomas",
+    "phone": "+1555100102",
+    "age": 30,
+    "campus": "west",
+    "ministries": [
+      "nursery"
+    ],
+    "roles": [
+      "worship_pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S4",
+    "kind": "staff",
+    "first_name": "Alex",
+    "last_name": "Smith",
+    "full_name": "Alex Smith",
+    "phone": "+1555100103",
+    "age": 32,
+    "campus": "east",
+    "ministries": [
+      "children",
+      "tech"
+    ],
+    "roles": [
+      "youth_pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S5",
+    "kind": "staff",
+    "first_name": "Morgan",
+    "last_name": "Williams",
+    "full_name": "Morgan Williams",
+    "phone": "+1555100104",
+    "age": 37,
+    "campus": "online",
+    "ministries": [
+      "prayer",
+      "students"
+    ],
+    "roles": [
+      "kids_director"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S6",
+    "kind": "staff",
+    "first_name": "Morgan",
+    "last_name": "Martin",
+    "full_name": "Morgan Martin",
+    "phone": "+1555100105",
+    "age": 49,
+    "campus": "north",
+    "ministries": [
+      "nursery"
+    ],
+    "roles": [
+      "tech_director"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S7",
+    "kind": "staff",
+    "first_name": "Alex",
+    "last_name": "Johnson",
+    "full_name": "Alex Johnson",
+    "phone": "+1555100106",
+    "age": 55,
+    "campus": "north",
+    "ministries": [
+      "hospitality"
+    ],
+    "roles": [
+      "outreach_lead"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S8",
+    "kind": "staff",
+    "first_name": "Rowan",
+    "last_name": "Taylor",
+    "full_name": "Rowan Taylor",
+    "phone": "+1555100107",
+    "age": 36,
+    "campus": "south",
+    "ministries": [
+      "prayer",
+      "tech"
+    ],
+    "roles": [
+      "care_pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S9",
+    "kind": "staff",
+    "first_name": "Jamie",
+    "last_name": "Johnson",
+    "full_name": "Jamie Johnson",
+    "phone": "+1555100108",
+    "age": 62,
+    "campus": "east",
+    "ministries": [
+      "tech"
+    ],
+    "roles": [
+      "executive_pastor"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S10",
+    "kind": "staff",
+    "first_name": "Reagan",
+    "last_name": "Davis",
+    "full_name": "Reagan Davis",
+    "phone": "+1555100109",
+    "age": 30,
+    "campus": "west",
+    "ministries": [
+      "tech"
+    ],
+    "roles": [
+      "operations"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S11",
+    "kind": "staff",
+    "first_name": "Emerson",
+    "last_name": "Hernandez",
+    "full_name": "Emerson Hernandez",
+    "phone": "+1555100110",
+    "age": 59,
+    "campus": "north",
+    "ministries": [
+      "children"
+    ],
+    "roles": [
+      "finance"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S12",
+    "kind": "staff",
+    "first_name": "Morgan",
+    "last_name": "White",
+    "full_name": "Morgan White",
+    "phone": "+1555100111",
+    "age": 41,
+    "campus": "east",
+    "ministries": [
+      "worship",
+      "prayer"
+    ],
+    "roles": [
+      "facilities"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S13",
+    "kind": "staff",
+    "first_name": "Jamie",
+    "last_name": "Thomas",
+    "full_name": "Jamie Thomas",
+    "phone": "+1555100112",
+    "age": 52,
+    "campus": "east",
+    "ministries": [
+      "nursery"
+    ],
+    "roles": [
+      "communications"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S14",
+    "kind": "staff",
+    "first_name": "Morgan",
+    "last_name": "Garcia",
+    "full_name": "Morgan Garcia",
+    "phone": "+1555100113",
+    "age": 46,
+    "campus": "online",
+    "ministries": [
+      "students",
+      "tech"
+    ],
+    "roles": [
+      "discipleship"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "S15",
+    "kind": "staff",
+    "first_name": "Finley",
+    "last_name": "Davis",
+    "full_name": "Finley Davis",
+    "phone": "+1555100114",
+    "age": 25,
+    "campus": "east",
+    "ministries": [
+      "children",
+      "tech"
+    ],
+    "roles": [
+      "missions"
+    ],
+    "is_active": true
+  }
+]

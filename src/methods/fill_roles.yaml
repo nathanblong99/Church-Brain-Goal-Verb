@@ -1,0 +1,38 @@
+method: fill_roles
+applicable_if: goal.kind == "FillRole"
+steps:
+  - call: search_people
+    args:
+      filter:
+        roles: ["{{goal.role}}"]
+        campus: "{{ctx.campus}}"
+        is_active: true
+    out: candidates
+  - call: make_offers
+    args:
+      people: "{{candidates.people}}"
+      role: "{{goal.role}}"
+      time: "{{goal.time}}"
+      expires_at: "{{now + 24h}}"
+    out: offers
+  - call: wait_for_replies
+    args:
+      offers: "{{offers.offers}}"
+      count: "{{goal.count}}"
+      timeout: "6h"
+    out: accepted
+  - call: assign
+    foreach: person in accepted.accepted
+    args:
+      person: "{{person}}"
+      role: "{{goal.role}}"
+      time: "{{goal.time}}"
+  - call: notify
+    args:
+      targets: ["pastor_of_{{goal.role}}"]
+      template: filled_n_of_m
+      vars:
+        n: "{{len(accepted.accepted)}}"
+        m: "{{goal.count}}"
+success_when:
+  - "len(accepted.accepted) >= goal.count"
